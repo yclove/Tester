@@ -45,6 +45,12 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+        viewModel.userModel.observe(this, Observer {
+            it?.let { data ->
+                Timber.e("${data.CODE} :: ${data.MESSAGE} :: ${data.RESPONSE.UAI}")
+            }
+        })
+
         binding.viewModel = viewModel
     }
 }

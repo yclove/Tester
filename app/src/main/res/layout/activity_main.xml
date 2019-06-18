@@ -19,28 +19,52 @@
             android:id="@+id/tv_message"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
             android:onClick="@{viewModel::onClickDone}"
+            android:text="Hello World!"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-            android:id="@+id/tv_mu"
+            android:id="@+id/tv_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.mutableLiveData}"
+            android:text="@{viewModel.observableFieldSt}"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="YC" />
 
-        <!--<TextView
-            android:id="@+id/tv_si"
+        <TextView
+            android:id="@+id/tv_second"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.singleLiveEvent}"
+            android:text="@{viewModel.observableFieldNd}"
+            android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />-->
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="LOVE" />
+
+        <TextView
+            android:id="@+id/tv_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.observable.name}"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_first"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="NAME" />
+
+        <TextView
+            android:id="@+id/tv_fourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@{viewModel.observable.age}"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_second"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="AGE" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -5,6 +5,7 @@ import android.widget.Toast
 import androidx.databinding.BaseObservable
 import androidx.databinding.Bindable
 import androidx.databinding.ObservableField
+import androidx.databinding.ObservableInt
 import androidx.lifecycle.MutableLiveData
 import com.ycengine.tester.vo.UserModel
 import io.reactivex.Flowable
@@ -34,6 +35,8 @@ class MainViewModel : BaseViewModel() {
     val observable = Item()
     val observableFieldSt = ObservableField<String>()
     val observableFieldNd = ObservableField<String>()
+    val observableFieldRd = ObservableField<Int>()
+    val observableFieldTh = ObservableInt()
 
     val mutableLiveData: MutableLiveData<String> = MutableLiveData()
     val singleLiveEvent: SingleLiveEvent<String> = SingleLiveEvent()
@@ -66,6 +69,8 @@ class MainViewModel : BaseViewModel() {
         observable.age = "${count++} AGE"
         observableFieldSt.set("${count++} Hello")
         observableFieldNd.set("${count++} How are you")
+        observableFieldRd.set(count++)
+        observableFieldTh.set(count++)
 
         mutableLiveData.value = "${count++} Mu"
         singleLiveEvent.value = "${count++} Si"

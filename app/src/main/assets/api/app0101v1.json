@@ -1,0 +1,150 @@
+{
+  "MESSAGE": "요청이 정상적으로 처리되었습니다.",
+  "CODE": "0000",
+  "RESPONSE": {
+    "DEVI_IDKEY": "E486B4C68762883F491A",
+    "HASH_POP_KEYWORD": [
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "문득"
+      }
+    ],
+    "POST_POP_KEYWORD": [
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "구"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "단지"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "덩어리"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "덩어리구"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "불"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "불만"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "뿐"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "뿐인데"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "산것"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "열심히"
+      }
+    ],
+    "LIKE_ICI": "8A33539FCCO941B673AF",
+    "COUNTRY_CODE": "KR",
+    "APP_VER": "44",
+    "CPS_UPD_YN": "Y",
+    "NOTI_SETTING": [],
+    "COLOR": [
+      {
+        "ICON_NM": "횐색",
+        "COLOR_CODE": "ffffff",
+        "SORT_ORDER": 1,
+        "ICI": "00000000000000FFFFFF"
+      },
+      {
+        "ICON_NM": "파랑",
+        "COLOR_CODE": "00afd5",
+        "SORT_ORDER": 2,
+        "ICI": "0000000000000000AFD5"
+      },
+      {
+        "ICON_NM": "노랑",
+        "COLOR_CODE": "ffcc4f",
+        "SORT_ORDER": 3,
+        "ICI": "00000000000000FFCC4F"
+      },
+      {
+        "ICON_NM": "빨강",
+        "COLOR_CODE": "f65857",
+        "SORT_ORDER": 4,
+        "ICI": "00000000000000F65857"
+      },
+      {
+        "ICON_NM": "초록",
+        "COLOR_CODE": "24cf5f",
+        "SORT_ORDER": 5,
+        "ICI": "0000000000000024CF5F"
+      },
+      {
+        "ICON_NM": "보라",
+        "COLOR_CODE": "6f73cc",
+        "SORT_ORDER": 6,
+        "ICI": "000000000000006F73CC"
+      },
+      {
+        "ICON_NM": "갈색",
+        "COLOR_CODE": "a08777",
+        "SORT_ORDER": 7,
+        "ICI": "00000000000000A08777"
+      },
+      {
+        "ICON_NM": "회색",
+        "COLOR_CODE": "898989",
+        "SORT_ORDER": 8,
+        "ICI": "00000000000000898989"
+      }
+    ],
+    "POST_INTRO_BG": "http://storage.melodigm.com/post/amd/video/intro_v002.mp4",
+    "MUS_POP_KEYWORD": [
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "나 어떡해"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "나를 봐"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "사랑"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "슬픈인연"
+      },
+      {
+        "RANKING": 1,
+        "KEYWORD_CNT": 1,
+        "KEYWORD": "인생은 미완성"
+      }
+    ],
+    "APP_VERNM": "0.4.4"
+  }
+}

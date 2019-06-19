@@ -30,6 +30,7 @@ class SingleLiveEvent<T> : MutableLiveData<T>() {
 
         // Observe the internal MutableLiveData
         super.observe(owner, Observer<T> { t ->
+            Timber.e("before compareAndSet :: ${mPending.get()}")
             if (mPending.compareAndSet(true, false)) {
                 observer.onChanged(t)
             }
@@ -38,6 +39,7 @@ class SingleLiveEvent<T> : MutableLiveData<T>() {
 
     @MainThread
     override fun setValue(@Nullable t: T?) {
+        Timber.e("AtomicBoolean set :: true")
         mPending.set(true)
         super.setValue(t)
     }
@@ -47,6 +49,7 @@ class SingleLiveEvent<T> : MutableLiveData<T>() {
      */
     @MainThread
     fun call() {
+        Timber.e("call value :: null")
         value = null
     }
 }

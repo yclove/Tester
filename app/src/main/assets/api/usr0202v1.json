@@ -1,0 +1,16 @@
+{
+  "MESSAGE": "요청이 정상적으로 처리되었습니다.",
+  "CODE": "0000",
+  "RESPONSE": {
+    "PUSH_IDS": [
+      {
+        "PUSH_ID": "fqxwzCSsHOw:APA91bGI3VuhcSlWRtN1jATbkWyizIKeQGl2eWGJeVM8_jt2Ffi9wiDWFYK-F_ZRHfEmvPkTUQ6DMIj_sC_GJbpu5tfp-aP8V8ZYutDBahiEmvN3hVANe3D5ia5LUEYxmFWIe7G7AJ5R",
+        "UAI": "7D085289E40C6AB4CCD3",
+        "DEVI_TYPE": "AH01"
+      }
+    ],
+    "PUSH_ID": "fqxwzCSsHOw:APA91bGI3VuhcSlWRtN1jATbkWyizIKeQGl2eWGJeVM8_jt2Ffi9wiDWFYK-F_ZRHfEmvPkTUQ6DMIj_sC_GJbpu5tfp-aP8V8ZYutDBahiEmvN3hVANe3D5ia5LUEYxmFWIe7G7AJ5R",
+    "BIRTHDATE": "1980",
+    "GENDER": "M"
+  }
+}

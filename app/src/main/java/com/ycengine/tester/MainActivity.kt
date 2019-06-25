@@ -25,6 +25,8 @@ class MainActivity : AppCompatActivity() {
         Timber.e("master commit #1")
 
         Timber.e("master commit #2")
+
+        Timber.e("rebase test : 01")
     }
 
     private fun initViewModel() {

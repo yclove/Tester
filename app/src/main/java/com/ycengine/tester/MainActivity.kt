@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         
         initViewModel()
+
+        Timber.e("develop commit #1")
     }
 
     private fun initViewModel() {

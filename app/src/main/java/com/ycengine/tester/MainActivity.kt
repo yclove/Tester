@@ -23,6 +23,8 @@ class MainActivity : AppCompatActivity() {
         initViewModel()
 
         Timber.e("master commit #1")
+
+        Timber.e("master commit #2")
     }
 
     private fun initViewModel() {

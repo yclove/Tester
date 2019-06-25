@@ -29,6 +29,8 @@ class MainActivity : AppCompatActivity() {
         Timber.e("rebase test : 01")
 
         Timber.e("rebase test : 02")
+
+        Timber.e("rebase test : 03")
     }
 
     private fun initViewModel() {

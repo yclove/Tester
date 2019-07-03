@@ -5,7 +5,15 @@ import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 
-data class DataClass(var name: String, var isMan: Boolean = true)
+data class DataClass(var name: String, var isMan: Boolean = true, var profile: String = "")
+enum class ProfileType(val stringRes: Int) {
+    NEW(R.string.profile_new),
+    OLD(R.string.profile_old);
+
+    companion object {
+        fun valueIndex(index: Int) = values().find { it.ordinal == index } ?: NEW
+    }
+}
 
 class FunctionTest {
     private var data: DataClass? = null
@@ -19,26 +27,26 @@ class FunctionTest {
 
     @Test
     fun addition_isCorrect() {
-        // let 함수는 함수를 호출하는 객체를 이어지는 블록의 인자로 넘기고, 블록의 결과값을 반환합니다.
+        // let : 이어지는 블록의 인자로 넘기고, 블록의 결과값을 반환
         var obj: String = data?.let {
             it
         }?.name ?: ""
         println("let : $obj")
 
-        // apply 함수는 함수를 호출하는 객체를 이어지는 블록의 리시버 로 전달하고, 객체 자체를 반환합니다.
+        // apply : 이어지는 블록의 리시버로 전달하고, 객체 자체를 반환
         obj = data?.apply {
             name = "JH"
         }?.name ?: ""
         println("apply : $obj")
 
-        // run 함수는 이어지는 블럭 내에서 처리할 작업들을 넣어줄 수 있으며, 일반 함수와 마찬가지로 값을 반환하지 않거나 (Unit) 특정 값을 반환할 수도 있습니다.
+        // run : 이어지는 블록의 리시버로 전달하고, 블록의 결과값을 반환
         obj = data?.run {
             name = "YC"
             this
         }?.name ?: ""
         println("run : $obj")
 
-        // with 함수는 인자로 받는 객체를 이어지는 블록의 리시버로 전달하며, 블록의 결과값을 반환합니다.
+        // with : 인자로 받는 객체를 이어지는 블록의 리시버로 전달하고, 블록의 결과값을 반환
         obj = data?.let {
             with(it) {
                 name = "JH"
@@ -47,7 +55,7 @@ class FunctionTest {
         } ?: ""
         println("with : $obj")
 
-        // takeIf
+        // takeIf : 블록의 조건이 참일 경우 객체 자체를 반환
         obj = data?.takeIf {
             it.isMan
         }?.run {
@@ -56,11 +64,21 @@ class FunctionTest {
         } ?: "JH"
         println("takeIf : $obj")
 
-        // also
+        // also : 블록 내에 전달된 수신객체를 그대로 다시 반환
         obj = data?.also {
             it.name = "JH"
         }?.name ?: ""
         println("also : $obj")
+
+        /////////////////////////////////////////////////////
+        //////////////////// Collection ////////////////////
+        /////////////////////////////////////////////////////
+
+        // find : 주어진 predicate 에 만족하는 첫번째 원소를 반환. 따라서 명시적으로 firstOrNull 을 사용해도 됨.
+        val type: ProfileType = ProfileType.values().find {
+            it.ordinal == 1
+        } ?: ProfileType.NEW
+        println("find : ${type.stringRes}")
 
         // filter
         var arr: List<DataClass> = arrData.filter {

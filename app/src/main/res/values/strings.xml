@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Tester</string>
+    <string name="profile_new">NEW</string>
+    <string name="profile_old">OLD</string>
 </resources>

@@ -84,7 +84,8 @@ class FunctionTest {
         var arr: List<DataClass> = arrData.filter {
             it.name.equals(other = "YC", ignoreCase = false)
         }
-        println("filter : $arr")
+        val item: String? = arr.firstOrNull() as? String
+        println("filter : $arr, $item")
 
         // filterIndexed
         arr = arrData.filterIndexed { index, _ ->
